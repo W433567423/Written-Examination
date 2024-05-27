@@ -16,7 +16,9 @@
 		"npm": "10.8.0"
 	},
 	"devDependencies": {
-		"parcel-bundler": "^1.12.5"
+		"@types/jquery": "^3.5.30",
+		"parcel-bundler": "^1.12.5",
+		"typescript": "^5.4.5"
 	},
 	"dependencies": {
 		"jquery": "^3.7.1",
