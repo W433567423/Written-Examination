@@ -6,7 +6,8 @@
 	"source": "index.html",
 	"scripts": {
 		"dev": "parcel index.html",
-		"build": "parcel build index.html"
+		"build": "parcel build index.html",
+		"build:local": "parcel build index.html --public-url ./"
 	},
 	"keywords": [],
 	"author": "",

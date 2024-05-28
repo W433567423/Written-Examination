@@ -5,8 +5,9 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>ORANGE MONSTER DEVELOPMENT</title>
-  <link rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
-  <link rel="stylesheet" href="./style.css" />
+  <link type="text/css" rel="stylesheet" href="node_modules/normalize.css/normalize.css" />
+  <link type="text/css" rel="stylesheet" href="./style.css" />
+  <link type="text/css" rel="stylesheet" href="./reset.css" />
 </head>
 
 <body>
@@ -23,12 +24,31 @@
         </div>
 
         <nav class="nav-wrap" id="nav">
-          <li class="nav-item active">Home</li>
-          <li class="nav-item">About Us</li>
-          <li class="nav-item">Portfolio</li>
-          <li class="nav-item">Solutions</li>
-          <li class="nav-item">Case Studies</li>
-          <li class="nav-item">Get a Quote</li>
+          <li class="nav-item active" data-link="false">一级导航
+            <!--  三级导航栏 -->
+            <div class="nav-sub">
+              <ul data-link="//baidu.com" class="isLink">跳转baidu</ul>
+              <ul>二级导航
+                <div class="nav-sub-grand">
+                  <li class="nav-item-grandchild isLink" data-link="//baidu.com">跳转baidu</li>
+                  <li class="nav-item-grandchild">三级导航-1</li>
+                  <li class="nav-item-grandchild">三级导航-2</li>
+                  <li class="nav-item-grandchild">三级导航-3</li>
+                  <li class="nav-item-grandchild">三级导航-4</li>
+                  <li class="nav-item-grandchild">三级导航-5</li>
+                </div>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item" data-link="false">About Us<div class="nav-sub">
+              <ul class="isLink" data-link="//baidu.com">跳转baidu </ul>
+            </div>
+          </li>
+          <li class="nav-item" data-change="true">Portfolio</li>
+          <li class="nav-item" data-change="true">Solutions</li>
+          <li class="nav-item" data-change="true">Case Studies</li>
+          <li class="nav-item" data-change="true">Get a Quote</li>
         </nav>
       </header>
       <main id="content0">
@@ -113,11 +133,11 @@
 
         </div>
       </main>
-      <main style="height: 800px; display: none;" id="content1"></main>
-      <main style="height: 800px; display: none;" id="content2"></main>
-      <main style="height: 800px; display: none;" id="content3"></main>
-      <main style="height: 800px; display: none;" id="content4"></main>
-      <main style="height: 800px; display: none;" id="content5"></main>
+      <main style="height: 800px; font-size: 30px;color: white; display: none;" id="content1">About us</main>
+      <main style="height: 800px; font-size: 30px;color: white; display: none;" id="content2">Portfolio</main>
+      <main style="height: 800px; font-size: 30px;color: white; display: none;" id="content3">Solutions</main>
+      <main style="height: 800px; font-size: 30px;color: white; display: none;" id="content4">Case Studies</main>
+      <main style="height: 800px; font-size: 30px;color: white; display: none;" id="content5">Get a Quote</main>
     </div>
   </div>
   <footer class="footer-wrap">
