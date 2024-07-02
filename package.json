@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "nodemon huawei_od/B/105-符合要求的元组的个数.js"
+  },
   "devDependencies": {
     "@types/node": "^20.14.9",
     "nodemon": "^3.1.4",
