@@ -11,9 +11,7 @@
     input: process.stdin,
     output: process.stdout,
   });
-  // 读取一行输入，表示矩阵
   rl.on("line", (inputLine) => {
-    // 将输入的字符串转换为矩阵
     const arr = inputLine.split(" ").map(Number);
 
     const resultArr = [];
